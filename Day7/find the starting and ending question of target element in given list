@@ -1,0 +1,19 @@
+def find_start_end(arr, target):
+  start = -1
+  end = -1
+  for i in range(len(arr)):
+    if arr[i] == target:
+      start = i
+      break
+  for i in range(len(arr) - 1, -1, -1):
+    if arr[i] == target:
+      end = i
+      break
+  return start, end
+arr = [1,2,3,4,3,3,5]
+target = 3
+start, end = find_start_end(arr, target)
+print(f"Start index: {start}, End index: {end}")
+
+output:
+Start index: 2, End index: 5
