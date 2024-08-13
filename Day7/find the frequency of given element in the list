@@ -1,0 +1,7 @@
+my_list = [1, 2, 3, 4, 2, 2, 3, 5, 2]
+element = 2
+frequency = my_list.count(element)
+print(f"The frequency of {element} in the list is: {frequency}")
+
+output:
+The frequency of 2 in the list is: 4
