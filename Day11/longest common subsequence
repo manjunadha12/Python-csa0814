@@ -1,0 +1,7 @@
+a="abcdgh"
+b="aedfhr"
+for i in a:
+   if i in b:
+        print(i,end="")
+OUTPUT:
+     adh
